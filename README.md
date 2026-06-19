@@ -1,5 +1,7 @@
 # lcd-ipconfig
 
+[![Build](https://github.com/lucduguaysita/MatrixOrbitalApp/actions/workflows/build.yml/badge.svg)](https://github.com/lucduguaysita/MatrixOrbitalApp/actions/workflows/build.yml)
+
 Interactive IP address configuration UI for the Matrix Orbital BGK19264A-7T
 (GLK19264A-7T-1U-USB) 192x64 graphic LCD, targeting systemd-networkd on Linux.
 
