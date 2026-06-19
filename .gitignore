@@ -1,0 +1,15 @@
+# Visual Studio / build artifacts
+.vs/
+bin/
+obj/
+*.user
+
+# Build output
+*.exe
+*.dll
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib

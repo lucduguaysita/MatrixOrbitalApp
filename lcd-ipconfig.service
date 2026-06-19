@@ -1,0 +1,14 @@
+[Unit]
+Description=LCD IP Configuration UI (BGK19264A-7T)
+After=NetworkManager.service dev-ttyACM0.device
+Wants=dev-ttyACM0.device
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/lcd_ipconfig
+Restart=on-failure
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
