@@ -15,7 +15,7 @@ clean:
 
 install: $(TARGET)
 	install -m 755 $(TARGET) /usr/local/bin/$(TARGET)
-	install -m 644 systemd/lcd-ipconfig.service /etc/systemd/system/
+	install -m 644 lcd-ipconfig.service /etc/systemd/system/
 	systemctl daemon-reload
 	systemctl enable lcd-ipconfig.service
 	@echo "Installed. Start with: systemctl start lcd-ipconfig"
