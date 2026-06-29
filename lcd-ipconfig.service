@@ -1,7 +1,10 @@
 [Unit]
 Description=LCD IP Configuration UI (BGK19264A-7T)
-After=NetworkManager.service dev-ttyACM0.device
-Wants=dev-ttyACM0.device
+# The program auto-detects and polls for the USB display itself, so the unit
+# must NOT wait on a specific device node (the old dev-ttyACM0.device
+# dependency made `systemctl start` hang until that device job timed out).
+After=NetworkManager.service
+Wants=NetworkManager.service
 
 [Service]
 Type=simple
